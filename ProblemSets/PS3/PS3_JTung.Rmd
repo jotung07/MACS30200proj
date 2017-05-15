@@ -1,0 +1,408 @@
+---
+title: "PS3_JTung"
+author: "Tung, Joanna"
+date: "May 12, 2017"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+Import Packages
+```{r, warning = FALSE}
+library(tidyverse)
+library(forcats)
+library(broom)
+library(modelr)
+library(stringr)
+library(ISLR)
+library(lmtest)
+library(haven)
+library(plotly)
+library(coefplot)
+library(car)
+library(MVN)
+
+options(digits = 3)
+set.seed(1234)
+theme_set(theme_minimal())
+```
+Read in the data
+```{r}
+biden_data <- read_csv("data/biden.csv") %>%
+  na.omit() %>%
+  mutate(ID = row_number())
+
+biden_data
+```
+PART ONE: Regression Diagnostics
+
+For this exercise we consider the following functional form:
+$$Y = \beta_{0} + \beta_{1}X_1 + \beta_{2}X_2 + \beta_{3}X_3$$
+
+where Y is the Joe Biden feeling thermometer, X1 is age, X2 is gender, X3 is education
+
+We estimate the parameters and standard errors for this linear regression model below:
+```{r}
+# Estimate the parameters for linear regression model
+biden_lm <- lm(biden ~ age + female + educ, data = biden_data)
+tidy(biden_lm)
+```
+
+_Question 1_
+First, we examine the model for any unusual and/or influential observations. Each observation was identified with a numerical ID from 1 through 1807 in order to more easily identify potential outliers (accomplished during the readin process). Observations were assessed for outlying leverage, discrepancy and influence effects on the final regression model.
+
+```{r}
+# calculate cutoff value for Influence measure
+cutoff <- 4 / (nrow(biden_data) - (length(coef(biden_lm)) - 1) - 1)
+
+# flag values that violate influence, discrepancy and leverage measures (1 = violated, 0 = normal)
+biden_augment <- biden_data %>%
+  mutate(hat = hatvalues(biden_lm),
+         student = rstudent(biden_lm),
+         cooksd = cooks.distance(biden_lm)) %>%
+  mutate(flagcd = ifelse(cooksd > cutoff, 1,0),
+         flaglev = ifelse(hat > 2 * mean(hat), 1,0),
+         flagstd = ifelse(abs(student) > 2, 1,0))
+```
+
+__Leverage__
+Hat-values give us a measure of the influence that a given observation may have on the coefficient estimates in the regression model. Observations that are far away from the bulk of observations will have higher calculated hat-values. 
+
+Hat-values were calculated to assess each observation's leverage on the biden_lm regression model. A total of 74 observations were larger than 2 times the mean hat value for the entire dataset and may have undue leverage on the final regression model. Observations were plotted; values that lay outide of the normal leverage range were flagged in blue and lay to the right of the vertical dashed line (x = 2 * mean(hat)).
+
+```{r}
+biden_augment %>%
+  filter(hat > 2 * mean(hat))
+
+mhat <- mean(biden_augment$hat)
+
+ggplot(biden_augment, aes(hat, student)) +
+  geom_hline(yintercept = 0, linetype = 2) +
+  geom_point(aes(color = factor(flaglev)), shape = 19) +
+  scale_size_continuous(range = c(1, 20)) +
+  scale_color_manual(values = c("gray28", "blue")) + 
+  geom_vline(xintercept = 2*mhat, linetype = 2) +
+  labs(x = "Leverage",
+       y = "Studentized residual",
+       title = "Bubble Plot",
+       subtitle = "Observations with outsized hat-values flagged in BLUE") +
+  theme(legend.position = "none")
+```
+
+__Discepancy__
+Discrepancy is commonly measured using studentized residuals, the fraction of a given observation's residual over its estimated standard deviation. Studentized residuals account for the variation in the standard deviation of predicted values' residuals, thus giving us a "scaled" version of the residuals that help us more accurately identify outlier observations. Roughly 95% of studentized residuals values fall within the range [-2,2].
+
+Studentized residuals were also calculated for each of the observations in the biden dataset. 82 of the observations fall outside of the [-2,2] range, and may be sufficiently discrepant from the remaining observations to unduly skew the regression model. Observations were plotted; values that lay outide of the 95% range of observations were flagged in green. Interestingly, all of the observations in green have negative studentized residuals, indicating a distinct pattern to the error in the regression model vis-a-vis these high discrepancy observations.
+```{r}
+biden_augment %>%
+  filter(abs(student) > 2)
+
+ggplot(biden_augment, aes(hat, student)) +
+  geom_hline(yintercept = 0, linetype = 2) +
+  geom_hline(yintercept = 2, linetype = 2) +
+  geom_hline(yintercept = -2, linetype = 2) +
+  geom_point(aes(color = factor(flagstd)), shape = 19) +
+  scale_size_continuous(range = c(1, 20)) +
+  scale_color_manual(values = c("gray28", "springgreen2")) + 
+  labs(x = "Leverage",
+       y = "Studentized residual",
+       title = "Bubble Plot",
+       subtitle = "Observations with outsized studentized residuals values flagged in GREEN") +
+  theme(legend.position = "none")
+```
+
+__Influence__
+Influence accounts for an observation's leverage and discrepancy. The cook's D value is a measurement of influence. Observations with undue influence are commonly identified as those observations with Cook's D values that meet the following criteria:
+
+$$D_i > \frac{4}{n - k- 1}$$
+A total of 90 observations had Cook's D values that exceeded this criteria. These observations may have outsized influence over the coefficient estimates of this regression model. Observations were plotted; values that lay outide of the normal Cook's D value range were flagged in red. AGain, we notice that the majority of observations that fall outside of the normal Cook's D value range are in the lower left hand corner of the graph, low leverage, but high discrepancy observations.
+```{r}
+biden_augment %>%
+  filter(cooksd > 4 / (nrow(.) - (length(coef(biden_lm)) - 1) - 1))
+
+ggplot(biden_augment, aes(hat, student)) +
+  geom_hline(yintercept = 0, linetype = 2) +
+  geom_point(aes(color = factor(flagcd)), shape = 19) +
+  scale_size_continuous(range = c(1, 20)) +
+  scale_color_manual(values = c("gray28", "red2")) +
+  labs(x = "Leverage",
+       y = "Studentized residual",
+       title = "Bubble Plot",
+       subtitle = "Observations with outsized Cook's D values flagged in RED") +
+  theme(legend.position = "none")
+```
+
+__Next Steps__
+Our examination of potential outliers identified several observations that may have outsized influence on our regression model. To adjust for these effects, we could selectively remove observations that appear to have undue influence over the coefficient estimates to see if their removal alters our regression model in a significant way.
+
+One way to identify such observations is to use graphical methods. Below, we've plotted each observation on the x and y axes by its hat-value (x) and studentized residual (y), adjusting the size and color of the markers by the number of indications of "outlier" status observed, where "outlier" status can be indicated by the leverage (hat-value), discrepancy (studentized residuals), or influence (Cook's D) measures discussed above. Again, we observe that the majority of outliers are low leverage, high discrepancy observations in the lower left hand side of the plot. 
+
+Finally, we filter the dataset to return only those 167 values with unusual influence on the coefficient estimates. To test whether or not the influence is meaningful, we could remove these potential outliers stepwise to see which observations most affect our coefficient estimates. Likely, we would start by removing those observations with the most indications of outlier status (Indcations = 3), then progressively omit more observations as we attempt to determine the effect of these observations on the estimated regression model.
+
+```{r}
+biden_augment <- biden_augment %>%
+  mutate(Indications = flagcd + flaglev + flagstd)
+
+
+ggplot(biden_augment, aes(hat, student)) +
+  geom_hline(yintercept = 0, linetype = 2) +
+  geom_point(aes(size = Indications, color = Indications), shape = 19) +
+  geom_hline(yintercept = 2, linetype = 2) +
+  geom_hline(yintercept = -2, linetype = 2) +
+  geom_vline(xintercept = 2*mhat, linetype = 2) +
+  scale_size_continuous(range = c(1, 6)) +
+  scale_colour_gradient(low='plum2', high='purple4') +
+  labs(x = "Leverage",
+       y = "Studentized residual",
+       title = "Bubble Plot evaluating Influence, Leverage and Discrepancy of Observations",
+       subtitle = "Observations size/color matched to number of indications of outlier status found") +
+  theme(legend.position = "right") +
+  scale_size(guide = "none")
+```
+
+```{r}
+biden_problem <- biden_augment %>%
+  filter(hat >= 2 * mean(hat) | 
+           abs(student) > 2 | 
+           cooksd > cutoff)
+
+biden_problem
+```
+
+_Question 2_
+Next, the data was examiend for non-normally distributed errors. A quantile-projection plot was created to investigate whether data violate our assumption of normal distribution. Because a considerable number of observations fall outside the 95% confidence interval range that assumes errors are normallly distributed, we must conclude that the data is not normally distributed.
+
+There are ways to correct for the non-normal distribution of the data. Commonly, we would attempt to transform some of the independent and dependent variables to investigate whether this results in a more closely normally distributed sets of observations. By plotting the resultant quantile-projection plot for each transformed dataset, we might determine the transformations that will provide the most normal-distribution of data. Because OLS assumes that the data are normally distributed, the closer we get to a normal distribution of observations, the more accurate our interpreations of the regression model become. 
+```{r}
+car::qqPlot(biden_lm)
+
+augment(biden_lm, biden_data) %>%
+  mutate(.student = rstudent(biden_lm)) %>%
+  ggplot(aes(.student)) +
+  geom_density(adjust = .5) +
+  labs(x = "Studentized residuals",
+       y = "Estimated density")
+```
+
+_Question 3_
+OLS assumes that error terms have a constant variance. However, this is not always the case. Now, we examine the data for non-constant variance in the data, aka heteroscedasticity.  We investigate the data using first a graphical method and secondly the Breusch-Pagan test.
+
+The difference between the predicted values from the regression model and the residuals (difference between the predicted and actual values) is a measure of error that can be used to detect heteroscedaticity. The plot of predicted values and residuals from the biden regression model is provided below. As the resultant plot clearly indicates, there is a distinct pattern to the error: errors are not distributed evenly around 0 and thus indicate the presence of heteroscedasticity.
+
+We verify this using the Bresuch-Pagan test. Results produce a significant p-value (less than 0.05), which indicates that the data is indeed, heteroscedastic. Because the errors do not have a constant variance, this means that our regression model will have biased estimates for the coefficient estimates, which will in turn result in skewed predictions from regression model.
+```{r}
+biden_data %>%
+  add_predictions(biden_lm) %>%
+  add_residuals(biden_lm) %>%
+  ggplot(aes(pred,resid)) +
+  geom_point(alpha = .2) +
+  geom_hline(yintercept = 0, linetype = 2) +
+  geom_quantile(method = 'rqss', lambda = 5, quantiles = c(0.05, 0.95)) +
+  labs(title = "Heteroscedastic variance of error terms",
+       x = "Predicted values",
+       y = "Residuals")
+
+```
+```{r}
+bptest(biden_lm)
+```
+_Question 4_
+Multicollinearity can also affect the accuracy of a regression model, as it can mask interaction effects between multiple variables. A common way to test for this is to use the variance inflaction factor, which measures the variance of a coefficient estimate when fitted to a full model veresus its own model. Since we have three explanatory variables, we will have to calculate the VIF for each estimated coefficient. This is accomplished by the code below. As a general rule of thumb, because the VIF values are less than 10, we can reasonbly assume that there is no potential multicollinearity in our biden_lm model.
+
+```{r}
+car::vif(biden_lm)
+```
+
+PART TWO: Interaction Terms
+
+Instant Effect Function
+```{r}
+# function to get point estimates and standard errors
+# model - lm object
+# mod_var - name of moderating variable in the interaction
+instant_effect <- function(model, mod_var){
+  # get interaction term name
+  int.name <- names(model$coefficients)[[which(str_detect(names(model$coefficients), ":"))]]
+  
+  marg_var <- str_split(int.name, ":")[[1]][[which(str_split(int.name, ":")[[1]] != mod_var)]]
+  
+  # store coefficients and covariance matrix
+  beta.hat <- coef(model)
+  cov <- vcov(model)
+  
+  # possible set of values for mod_var
+  if(class(model)[[1]] == "lm"){
+    z <- seq(min(model$model[[mod_var]]), max(model$model[[mod_var]]))
+  } else {
+    z <- seq(min(model$data[[mod_var]]), max(model$data[[mod_var]]))
+  }
+  
+  # calculate instantaneous effect
+  dy.dx <- beta.hat[[marg_var]] + beta.hat[[int.name]] * z
+  
+  # calculate standard errors for instantaeous effect
+  se.dy.dx <- sqrt(cov[marg_var, marg_var] +
+                     z^2 * cov[int.name, int.name] +
+                     2 * z * cov[marg_var, int.name])
+  
+  # combine into data frame
+  data_frame(z = z,
+             dy.dx = dy.dx,
+             se = se.dy.dx)
+}
+
+```
+
+For this exercise we consider the following functional form:
+$$Y = \beta_{0} + \beta_{1}X_1 + \beta_{2}X_2 + \beta_{3}X_1X_2$$
+
+where Y is the Joe Biden feeling thermometer, X1 is age and X2 is education
+
+We estimate the parameters and standard errors for this linear regression model:
+```{r}
+# Estimate the parameters for linear regression model
+biden_lmint <- lm(biden ~ age * educ, data = biden_data)
+tidy(biden_lmint)
+```
+
+_Question 1_
+First, we evalute the marginal effect of age on Joe Biden thermometer rating, conditional on education. We do this firstly using a graphical approach, then secondly using the Wald Test (linearHypothesis function).
+
+In the graphical approach below, we have plotted the estimated marginal effect of age by respondent education. This graph tells us that the marginal effect of age on Biden rating steadily decreases as education increases, eventually becoming negative for respondents that reported education levels of 14 or higher. We can clearly see that education has a significant marginal effect on age's impact on Biden Thermometer rating, especially at lower levels of education.
+
+The significance of this finding is confirmed using the results of the Wald Test (linearHypothesis function from the car package). We can see that the p-value for the fit of the unrestricted model compared to the restricted model is less than 0.05: this tells us the marginal effect of education on age's impact on Biden Thermometer rating is significant.
+```{r}
+# Plot the marginal effect of age on biden thermometer rating, by education
+instant_effect(biden_lmint, "educ") %>%
+  ggplot(aes(z, dy.dx,
+             ymin = dy.dx - 1.96 * se,
+             ymax = dy.dx + 1.96 * se)) +
+  geom_pointrange() +
+  geom_hline(yintercept = 0, linetype = 2) +
+  labs(title = "Marginal effect of age",
+       subtitle = "By respondent education",
+       x = "Respondent education",
+       y = "Estimated marginal effect")
+
+# Run Wald test to check for variable significance of education
+linearHypothesis(biden_lmint, "educ + age:educ")
+```
+_Question 2_
+Secondly, we evalute the marginal effect of education on Joe Biden thermometer rating, conditional on age. Similarly, we do this firstly using a graphical approach, then secondly using the Wald Test (linearHypothesis function).
+
+In the graphical approach below, we have plotted the estimated marginal effect of education by respondent age, the inverse of the context above. This graph tells us that the marginal effect of education on biden rating steadily decreases as age increases, eventually becoming negative for respondents that reported age levels of 34 or higher. Again, we can clearly see that age has a significant effect on education's impact on Biden Thermometer rating for certain ranges of ages.
+
+The significance of this finding is verified using the results of the Wald Test (linearHypothesis function from the car package). Because the Wald Test below has produced a p-value less than 0.05, we confirm that the marginal effect from age on education's impact on Biden Thermometer rating is significant.
+
+```{r}
+instant_effect(biden_lmint, "age") %>%
+  ggplot(aes(z, dy.dx,
+             ymin = dy.dx - 1.96 * se,
+             ymax = dy.dx + 1.96 * se)) +
+  geom_pointrange() +
+  geom_hline(yintercept = 0, linetype = 2) +
+  labs(title = "Marginal effect of education",
+       subtitle = "By respondent age",
+       x = "Respondent age",
+       y = "Estimated marginal effect")
+
+# Run Wald test to check for variable significance of education
+linearHypothesis(biden_lmint, "age + age:educ")
+```
+PART THREE: Missing Data
+
+The data is re-imported in full; missing records were not omitted.
+
+First, we test the data for multivariate normality, using both the Mardia and Henze-Zirkler tests found in the MVN package. Both tests find that the data are not multivariate normal. We plot the q-q and histogram plots for the variables of interest and visually to examine the distribution of observations for each variable. Results suggest that we may be able to transform age or education to get the distribution to more closely resemble normal.
+```{r}
+# get rid of ID column, unnecessary for Part Three
+biden_p3 <- biden_data %>%
+  select(-ID)
+
+# MVN tests: Mardia and Henze-Zirkler
+mardiaTest(biden_p3, qqplot = FALSE)
+hzTest(biden_p3, qqplot = FALSE)
+
+# Plot Q-Q and histogram plots
+uniPlot(biden_p3, type = "qqplot") # creates univariate Q-Q plots
+uniPlot(biden_p3, type = "histogram") # creates univariate histograms
+```
+We try taking the log and the square root of age and education variables, then replot the q-q and histogram plots. The square root transformations appear to adjust the distribution best. Unfortunately, when the square-root transformed model was tested for Multivariate Normality using the Mardia and Henze-Zirkler tests, data were still found to violate multivariate normality. Since the transformations fail to restore multivariate normality, no transformation will use in the multiple imputation analysis to follow.
+```{r}
+biden_test <- biden_p3 %>%
+  mutate(log_age = log(age +1),
+         log_educ = log(educ+1),
+         sq_age = sqrt(age),
+         sq_educ = sqrt(educ))
+
+uniPlot(biden_test, type = "qqplot") # creates univariate Q-Q plots
+uniPlot(biden_test, type = "histogram") # creates univariate histograms
+
+biden_sq <- biden_test %>%
+  select(-log_age, -log_educ, -age, -educ)
+
+biden_sq
+
+# MVN tests: Mardia and Henze-Zirkler
+mardiaTest(biden_sq, qqplot = FALSE)
+hzTest(biden_sq, qqplot = FALSE)
+```
+We use the Amelia package to create 5 imputations of the data, then estimate the parameters and calculate the standard errors for each imputed dataset. Per the multiple imputation method, the final parameters and standard errors reported in the table below (statistics with the label ".mi") are simply the mean of the given statistic from each of the 5 imputed datasets. We compare this imputed model with the original linear regression model (biden_lm) generated from the dataset with missing records removed. The sign and magnitude of the coefficients and standard errors are the same across the imputed and original models. There are some differences: the standard errors are slightly lower for the imputed model and the coefficients differ slightly.
+
+```{r}
+library(Amelia)
+
+biden_full <- read_csv("data/biden.csv")
+biden_full.out <- amelia(as.data.frame(biden_full), m = 5)
+```
+```{r}
+models_imp <- data_frame(data = biden_full.out$imputations) %>%
+  mutate(model = map(data, ~ lm(biden ~ age +
+                                  female + educ,
+                                data = .x)),
+         coef = map(model, tidy)) %>%
+  unnest(coef, .id = "id")
+models_imp
+
+mi.meld.plus <- function(df_tidy){
+  # transform data into appropriate matrix shape
+  coef.out <- df_tidy %>%
+    select(id:estimate) %>%
+    spread(term, estimate) %>%
+    select(-id)
+  
+  se.out <- df_tidy %>%
+    select(id, term, std.error) %>%
+    spread(term, std.error) %>%
+    select(-id)
+  
+  combined.results <- mi.meld(q = coef.out, se = se.out)
+  
+  data_frame(term = colnames(combined.results$q.mi),
+             estimate.mi = combined.results$q.mi[1, ],
+             std.error.mi = combined.results$se.mi[1, ])
+}
+
+# compare results
+tidy(biden_lm) %>%
+  left_join(mi.meld.plus(models_imp)) %>%
+  select(-statistic, -p.value)
+```
+The imputed model may not differ considerably from the original model (biden_lm) because there is relatively little data missing from the original dataset. Below, we've plotted a graphic illustrating the number of missing data. As the graphic clearly shows, there is very little "missingness" in the data, so the posterior distribution of the data that is used to impute the data should be fairly accurate.
+```{r}
+missmap(biden_full.out)
+```
+
