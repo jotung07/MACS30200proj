@@ -1,0 +1,121 @@
+---
+title: "A Quantitative Exploration of Common Trends and Themes in the History of American Conservatism"
+subtitle: "A Case-Study of Antigovernment Group Formation, 2012-2015"
+author: "Joanna Tung"
+date: "June 4, 2017"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, comment = NA, warning = FALSE, message = FALSE)
+```
+
+```{r}
+library(tidyverse)
+library(forcats)
+library(broom)
+library(modelr)
+library(tree)
+library(randomForest)
+library(stringr)
+library(ISLR)
+library(gridExtra)
+library(grid)
+library(pROC)
+library(gbm)
+library(ggdendro)
+library(e1071)
+library(forcats)
+library(knitr)
+```
+
+```{r}
+splc = read_csv("SPLC_ACS_FINAL_2012-2015.csv") %>%
+  na.omit() %>%
+  select(-X1)
+  
+splc$Militia_Max <- as.factor(splc$Militia_Max)
+splc$AG_Max <- as.factor(splc$AG_Max)
+splc$Urban <- as.factor(splc$Urban)
+
+finsplc <- splc %>%
+  select(Birth_DiffSt_P, Urban, Veterans_Gulf_P, Veterans_PreGulf_P, Employ_Private_P, House_Fem_P, Education_BachPlus_P, Birth_Forgn_P, AG_Max, Militia_Max)
+
+summary(finsplc)
+
+```
+```{r}
+# Set the random seed
+set.seed(1234)
+
+# Split data into test/training set partition
+splc_split <- resample_partition(splc, c(test = 0.3, train = 0.7))
+splc_train <- splc_split$train %>%
+  tbl_df()
+splc_test <- splc_split$test %>%
+  tbl_df()
+```
+```{r}
+splc2015 <- splc_train %>% filter(Year_x == 2015)
+splc2014 <- splc_train %>% filter(Year_x == 2014)
+splc2013 <- splc_train %>% filter(Year_x == 2013)
+splc2012 <- splc_train %>% filter(Year_x == 2012)
+```
+
+
+```{r}
+logmilt <- glm(Militia_Max ~ Birth_DiffSt_P + Urban + Veterans_Gulf_P + Veterans_PreGulf_P + Employ_Private_P + House_Fem_P + Education_BachPlus_P + Birth_Forgn_P, data = splc_train, family = binomial)
+summary(logmilt)
+tidy(logmilt)
+```
+
+```{r}
+logit2prob <- function(x){
+  exp(x) / (1 + exp(x))
+}
+```
+
+```{r}
+militia_accuracy <- splc_test %>%
+  add_predictions(logmilt) %>%
+  mutate(pred = logit2prob(pred),
+         pred = as.numeric(pred > .5))
+
+mean(militia_accuracy$Militia_Max == militia_accuracy$pred, na.rm = TRUE)
+```
+
+```{r}
+finsplc <- splc %>%
+  select(Birth_DiffSt_P, Urban, Veterans_Gulf_P, Employ_Private_P, House_Fem_P, Education_BachPlus_P, Poverty_Fam_P, Birth_Forgn_P, AG_Max, Militia_Max)
+
+summary(finsplc)
+```
+```{r}
+# function to calculate PRE for a logistic regression model
+PRE <- function(model){
+  # get the actual values for y from the data
+  y <- model$y
+  
+  # get the predicted values for y from the model
+  y.hat <- round(model$fitted.values)
+  
+  # calculate the errors for the null model and your model
+  E1 <- sum(y != median(y))
+  E2 <- sum(y != y.hat)
+  
+  # calculate the proportional reduction in error
+  PRE <- (E1 - E2) / E1
+  return(PRE)
+}
+
+PRE(logmilt)
+```
+
+```{r}
+library(pROC)
+roc_x <- roc(militia_accuracy$Militia_Max, militia_accuracy$pred)
+png(filename="MiltROC.png")
+plot(roc_x)
+dev.off()
+```
+

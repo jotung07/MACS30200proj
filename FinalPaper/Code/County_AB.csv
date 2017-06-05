@@ -1,0 +1,208 @@
+,State,Name,Raw,Year,ST,Militia,Militia2,state_city,County_a,state_county,fips_county_a,id,County_b,fips_county_b,flag_fips,flag_county
+152,Alaska,Alaska Peacemakers Militia* ,Fairbanks,2012,AK,Yes,Yes,AK_Fairbanks,Fairbanks North Star County,AK_Fairbanks North Star County,,Alaska Peacemakers Militia* _AK_Fairbanks,Fairbanks North Star Borough,090,090,Fairbanks North Star Borough
+153,Alaska,Anchorage Municipality Defense Force*,Anchorage,2012,AK,Yes,Yes,AK_Anchorage,Anchorage County,AK_Anchorage County,,Anchorage Municipality Defense Force*_AK_Anchorage,Anchorage Municipality,020,020,Anchorage Municipality
+154,Alaska,Central Alaska Militia*,Delta Junction,2012,AK,Yes,Yes,AK_Delta Junction,Southeast Fairbanks County,AK_Southeast Fairbanks County,,Central Alaska Militia*_AK_Delta Junction,Southeast Fairbanks Census Area,240,240,Southeast Fairbanks Census Area
+155,Alaska,Central Alaska Militia*,Fairbanks,2012,AK,Yes,Yes,AK_Fairbanks,Fairbanks North Star County,AK_Fairbanks North Star County,,Central Alaska Militia*_AK_Fairbanks,Fairbanks North Star Borough,090,090,Fairbanks North Star Borough
+157,Alaska,Central Alaska Militia*,North Pole,2012,AK,Yes,Yes,AK_North Pole,Fairbanks North Star County,AK_Fairbanks North Star County,,Central Alaska Militia*_AK_North Pole,Fairbanks North Star Borough,090,090,Fairbanks North Star Borough
+159,Alaska,Central Kenai Peninsula Militia* ,Kenai,2012,AK,Yes,Yes,AK_Kenai,Kenai Peninsula County,AK_Kenai Peninsula County,,Central Kenai Peninsula Militia* _AK_Kenai,Kenai Peninsula Borough,122,122,Kenai Peninsula Borough
+160,Alaska,Constitution Party (Alaska Independence Party),Soldotna,2012,AK,No,No,AK_Soldotna,Kenai Peninsula County,AK_Kenai Peninsula County,,Constitution Party (Alaska Independence Party)_AK_Soldotna,Kenai Peninsula Borough,122,122,Kenai Peninsula Borough
+167,Alaska,South Central Alaska Militia* ,Wasilla,2012,AK,Yes,Yes,AK_Wasilla,Matanuska Susitna County,AK_Matanuska Susitna County,,South Central Alaska Militia* _AK_Wasilla,Matanuska-Susitna Borough,170,170,Matanuska-Susitna Borough
+168,Alaska,Spartan Marine Corps of Alaska*,Juneau,2012,AK,Yes,Yes,AK_Juneau,Juneau County,AK_Juneau County,,Spartan Marine Corps of Alaska*_AK_Juneau,Juneau City and Borough,110,110,Juneau City and Borough
+169,Alaska,Spartan Marine Corps of Alaska*,Valdez,2012,AK,Yes,Yes,AK_Valdez,Valdez Cordova County,AK_Valdez Cordova County,,Spartan Marine Corps of Alaska*_AK_Valdez,Valdez-Cordova Census Area,261,261,Valdez-Cordova Census Area
+170,Alaska,We the People,Homer,2012,AK,No,No,AK_Homer,Kenai Peninsula County,AK_Kenai Peninsula County,,We the People_AK_Homer,Kenai Peninsula Borough,122,122,Kenai Peninsula Borough
+173,Alaska,Anchorage Municipality Defense Force*,Anchorage,2016,AK,Yes,Yes,AK_Anchorage,Anchorage County,AK_Anchorage County,,Anchorage Municipality Defense Force*_AK_Anchorage,Anchorage Municipality,020,020,Anchorage Municipality
+174,Alaska,Central Alaska Militia*,Delta Junction,2016,AK,Yes,Yes,AK_Delta Junction,Southeast Fairbanks County,AK_Southeast Fairbanks County,,Central Alaska Militia*_AK_Delta Junction,Southeast Fairbanks Census Area,240,240,Southeast Fairbanks Census Area
+175,Alaska,Constitution Party of Alaska,Soldotna,2016,AK,No,No,AK_Soldotna,Kenai Peninsula County,AK_Kenai Peninsula County,,Constitution Party of Alaska_AK_Soldotna,Kenai Peninsula Borough,122,122,Kenai Peninsula Borough
+176,Alaska,Eagle Forum,Cordova,2016,AK,No,No,AK_Cordova,Valdez Cordova County,AK_Valdez Cordova County,,Eagle Forum_AK_Cordova,Valdez-Cordova Census Area,261,261,Valdez-Cordova Census Area
+178,Alaska,Oath Keepers,Anchorage,2016,AK,No,No,AK_Anchorage,Anchorage County,AK_Anchorage County,,Oath Keepers_AK_Anchorage,Anchorage Municipality,020,020,Anchorage Municipality
+179,Alaska,South Central Patriots*,Wasilla,2016,AK,Yes,Yes,AK_Wasilla,Matanuska Susitna County,AK_Matanuska Susitna County,,South Central Patriots*_AK_Wasilla,Matanuska-Susitna Borough,170,170,Matanuska-Susitna Borough
+182,Alaska,Anchorage Municipality Defense Force*,Anchorage,2015,AK,Yes,Yes,AK_Anchorage,Anchorage County,AK_Anchorage County,,Anchorage Municipality Defense Force*_AK_Anchorage,Anchorage Municipality,020,020,Anchorage Municipality
+183,Alaska,Central Alaska Militia*,Delta Junction,2015,AK,Yes,Yes,AK_Delta Junction,Southeast Fairbanks County,AK_Southeast Fairbanks County,,Central Alaska Militia*_AK_Delta Junction,Southeast Fairbanks Census Area,240,240,Southeast Fairbanks Census Area
+184,Alaska,Central Alaska Militia*,Fairbanks,2015,AK,Yes,Yes,AK_Fairbanks,Fairbanks North Star County,AK_Fairbanks North Star County,,Central Alaska Militia*_AK_Fairbanks,Fairbanks North Star Borough,090,090,Fairbanks North Star Borough
+185,Alaska,Constitution Party of Alaska,Haines,2015,AK,No,No,AK_Haines,Haines County,AK_Haines County,,Constitution Party of Alaska_AK_Haines,Haines Borough,100,100,Haines Borough
+186,Alaska,Eagle Forum,Cordova,2015,AK,No,No,AK_Cordova,Valdez Cordova County,AK_Valdez Cordova County,,Eagle Forum_AK_Cordova,Valdez-Cordova Census Area,261,261,Valdez-Cordova Census Area
+188,Alaska,Kenai Peninsula Militia*,Kenai,2015,AK,Yes,Yes,AK_Kenai,Kenai Peninsula County,AK_Kenai Peninsula County,,Kenai Peninsula Militia*_AK_Kenai,Kenai Peninsula Borough,122,122,Kenai Peninsula Borough
+189,Alaska,Oath Keepers,Anchorage,2015,AK,No,No,AK_Anchorage,Anchorage County,AK_Anchorage County,,Oath Keepers_AK_Anchorage,Anchorage Municipality,020,020,Anchorage Municipality
+190,Alaska,South Central Patriots*,Wasilla,2015,AK,Yes,Yes,AK_Wasilla,Matanuska Susitna County,AK_Matanuska Susitna County,,South Central Patriots*_AK_Wasilla,Matanuska-Susitna Borough,170,170,Matanuska-Susitna Borough
+193,Alaska,Anchorage Municipality Defense Force*,Anchorage,2014,AK,Yes,Yes,AK_Anchorage,Anchorage County,AK_Anchorage County,,Anchorage Municipality Defense Force*_AK_Anchorage,Anchorage Municipality,020,020,Anchorage Municipality
+195,Alaska,Central Alaska Militia*,Delta Junction,2014,AK,Yes,Yes,AK_Delta Junction,Southeast Fairbanks County,AK_Southeast Fairbanks County,,Central Alaska Militia*_AK_Delta Junction,Southeast Fairbanks Census Area,240,240,Southeast Fairbanks Census Area
+196,Alaska,Central Alaska Militia*,Fairbanks,2014,AK,Yes,Yes,AK_Fairbanks,Fairbanks North Star County,AK_Fairbanks North Star County,,Central Alaska Militia*_AK_Fairbanks,Fairbanks North Star Borough,090,090,Fairbanks North Star Borough
+197,Alaska,Central Alaska Militia*,North Pole,2014,AK,Yes,Yes,AK_North Pole,Fairbanks North Star County,AK_Fairbanks North Star County,,Central Alaska Militia*_AK_North Pole,Fairbanks North Star Borough,090,090,Fairbanks North Star Borough
+198,Alaska,Central Kenai Peninsula Militia*,Kenai,2014,AK,Yes,Yes,AK_Kenai,Kenai Peninsula County,AK_Kenai Peninsula County,,Central Kenai Peninsula Militia*_AK_Kenai,Kenai Peninsula Borough,122,122,Kenai Peninsula Borough
+199,Alaska,Constitution Party,Haines,2014,AK,No,No,AK_Haines,Haines County,AK_Haines County,,Constitution Party_AK_Haines,Haines Borough,100,100,Haines Borough
+200,Alaska,Eagle Forum,Anchorage,2014,AK,No,No,AK_Anchorage,Anchorage County,AK_Anchorage County,,Eagle Forum_AK_Anchorage,Anchorage Municipality,020,020,Anchorage Municipality
+201,Alaska,Get Out Of Our House (GOOOH),Juneau,2014,AK,No,No,AK_Juneau,Juneau County,AK_Juneau County,,Get Out Of Our House (GOOOH)_AK_Juneau,Juneau City and Borough,110,110,Juneau City and Borough
+202,Alaska,Juneau Territorial Guard*,Juneau,2014,AK,Yes,Yes,AK_Juneau,Juneau County,AK_Juneau County,,Juneau Territorial Guard*_AK_Juneau,Juneau City and Borough,110,110,Juneau City and Borough
+204,Alaska,South Central Patriots*,Wasilla,2014,AK,Yes,Yes,AK_Wasilla,Matanuska Susitna County,AK_Matanuska Susitna County,,South Central Patriots*_AK_Wasilla,Matanuska-Susitna Borough,170,170,Matanuska-Susitna Borough
+206,Alaska,Anchorage Municipality Defense Force*,Anchorage,2013,AK,Yes,Yes,AK_Anchorage,Anchorage County,AK_Anchorage County,,Anchorage Municipality Defense Force*_AK_Anchorage,Anchorage Municipality,020,020,Anchorage Municipality
+207,Alaska,Bethel Citizens Militia*,Bethel,2013,AK,Yes,Yes,AK_Bethel,Bethel County,AK_Bethel County,,Bethel Citizens Militia*_AK_Bethel,Bethel Census Area,050,050,Bethel Census Area
+208,Alaska,Central Alaska Militia*,Delta Junction,2013,AK,Yes,Yes,AK_Delta Junction,Southeast Fairbanks County,AK_Southeast Fairbanks County,,Central Alaska Militia*_AK_Delta Junction,Southeast Fairbanks Census Area,240,240,Southeast Fairbanks Census Area
+209,Alaska,Central Alaska Militia*,Fairbanks,2013,AK,Yes,Yes,AK_Fairbanks,Fairbanks North Star County,AK_Fairbanks North Star County,,Central Alaska Militia*_AK_Fairbanks,Fairbanks North Star Borough,090,090,Fairbanks North Star Borough
+211,Alaska,Central Alaska Militia*,North Pole,2013,AK,Yes,Yes,AK_North Pole,Fairbanks North Star County,AK_Fairbanks North Star County,,Central Alaska Militia*_AK_North Pole,Fairbanks North Star Borough,090,090,Fairbanks North Star Borough
+213,Alaska,Constitution Party,Soldotna,2013,AK,No,No,AK_Soldotna,Kenai Peninsula County,AK_Kenai Peninsula County,,Constitution Party_AK_Soldotna,Kenai Peninsula Borough,122,122,Kenai Peninsula Borough
+217,Alaska,Juneau Territorial Guard*,Juneau,2013,AK,Yes,Yes,AK_Juneau,Juneau County,AK_Juneau County,,Juneau Territorial Guard*_AK_Juneau,Juneau City and Borough,110,110,Juneau City and Borough
+218,Alaska,Kenai Peninsula Citizens Militia*,Kenai,2013,AK,Yes,Yes,AK_Kenai,Kenai Peninsula County,AK_Kenai Peninsula County,,Kenai Peninsula Citizens Militia*_AK_Kenai,Kenai Peninsula Borough,122,122,Kenai Peninsula Borough
+223,Alaska,Spartan Marine Corps of Alaska*,Juneau,2013,AK,Yes,Yes,AK_Juneau,Juneau County,AK_Juneau County,,Spartan Marine Corps of Alaska*_AK_Juneau,Juneau City and Borough,110,110,Juneau City and Borough
+224,Alaska,Spartan Marine Corps of Alaska*,Valdez,2013,AK,Yes,Yes,AK_Valdez,Valdez Cordova County,AK_Valdez Cordova County,,Spartan Marine Corps of Alaska*_AK_Valdez,Valdez-Cordova Census Area,261,261,Valdez-Cordova Census Area
+225,Alaska,We the People,Homer,2013,AK,No,No,AK_Homer,Kenai Peninsula County,AK_Kenai Peninsula County,,We the People_AK_Homer,Kenai Peninsula Borough,122,122,Kenai Peninsula Borough
+228,Alaska,Alaska Peacemakers Militia*,Fairbanks,2011,AK,Yes,Yes,AK_Fairbanks,Fairbanks North Star County,AK_Fairbanks North Star County,,Alaska Peacemakers Militia*_AK_Fairbanks,Fairbanks North Star Borough,090,090,Fairbanks North Star Borough
+231,Alaska,Alaskan Contingent Guard*,Valdez,2011,AK,Yes,Yes,AK_Valdez,Valdez Cordova County,AK_Valdez Cordova County,,Alaskan Contingent Guard*_AK_Valdez,Valdez-Cordova Census Area,261,261,Valdez-Cordova Census Area
+232,Alaska,Central Alaska Militia*,Delta Junction,2011,AK,Yes,Yes,AK_Delta Junction,Southeast Fairbanks County,AK_Southeast Fairbanks County,,Central Alaska Militia*_AK_Delta Junction,Southeast Fairbanks Census Area,240,240,Southeast Fairbanks Census Area
+233,Alaska,Constitution Party (Alaskan Independence Party),Soldotna,2011,AK,No,No,AK_Soldotna,Kenai Peninsula County,AK_Kenai Peninsula County,,Constitution Party (Alaskan Independence Party)_AK_Soldotna,Kenai Peninsula Borough,122,122,Kenai Peninsula Borough
+238,Alaska,Second Amendment Task Force,Fairbanks,2011,AK,No,No,AK_Fairbanks,Fairbanks North Star County,AK_Fairbanks North Star County,,Second Amendment Task Force_AK_Fairbanks,Fairbanks North Star Borough,090,090,Fairbanks North Star Borough
+239,Alaska,South Central Militia*,Wasilla,2011,AK,Yes,Yes,AK_Wasilla,Matanuska Susitna County,AK_Matanuska Susitna County,,South Central Militia*_AK_Wasilla,Matanuska-Susitna Borough,170,170,Matanuska-Susitna Borough
+242,Alaska,We the People,Homer,2011,AK,No,No,AK_Homer,Kenai Peninsula County,AK_Kenai Peninsula County,,We the People_AK_Homer,Kenai Peninsula Borough,122,122,Kenai Peninsula Borough
+244,Alaska,Alaska Citizens Militia*,Delta Junction,2010,AK,Yes,Yes,AK_Delta Junction,Southeast Fairbanks County,AK_Southeast Fairbanks County,,Alaska Citizens Militia*_AK_Delta Junction,Southeast Fairbanks Census Area,240,240,Southeast Fairbanks Census Area
+246,Alaska,Alaska Peacemakers Militia*,Fairbanks,2010,AK,Yes,Yes,AK_Fairbanks,Fairbanks North Star County,AK_Fairbanks North Star County,,Alaska Peacemakers Militia*_AK_Fairbanks,Fairbanks North Star Borough,090,090,Fairbanks North Star Borough
+248,Alaska,Constitution Party (Alaskan Independence Party),Soldotna,2010,AK,No,No,AK_Soldotna,Kenai Peninsula County,AK_Kenai Peninsula County,,Constitution Party (Alaskan Independence Party)_AK_Soldotna,Kenai Peninsula Borough,122,122,Kenai Peninsula Borough
+251,Alaska,Second Amendment Task Force,Fairbanks,2010,AK,No,No,AK_Fairbanks,Fairbanks North Star County,AK_Fairbanks North Star County,,Second Amendment Task Force_AK_Fairbanks,Fairbanks North Star Borough,090,090,Fairbanks North Star Borough
+252,Alaska,We the People,Homer,2010,AK,No,No,AK_Homer,Kenai Peninsula County,AK_Kenai Peninsula County,,We the People_AK_Homer,Kenai Peninsula Borough,122,122,Kenai Peninsula Borough
+254,Alaska,Constitution Party (Alaskan Independence Party),Soldotna,2009,AK,No,No,AK_Soldotna,Kenai Peninsula County,AK_Kenai Peninsula County,,Constitution Party (Alaskan Independence Party)_AK_Soldotna,Kenai Peninsula Borough,122,122,Kenai Peninsula Borough
+257,Alaska,We the People,Homer,2009,AK,No,No,AK_Homer,Kenai Peninsula County,AK_Kenai Peninsula County,,We the People_AK_Homer,Kenai Peninsula Borough,122,122,Kenai Peninsula Borough
+258,Alaska,Constitution Party,Kenai,2008,AK,No,No,AK_Kenai,Kenai Peninsula County,AK_Kenai Peninsula County,,Constitution Party_AK_Kenai,Kenai Peninsula Borough,122,122,Kenai Peninsula Borough
+260,Alaska,Constitution Party,Kenai,2007,AK,No,No,AK_Kenai,Kenai Peninsula County,AK_Kenai Peninsula County,,Constitution Party_AK_Kenai,Kenai Peninsula Borough,122,122,Kenai Peninsula Borough
+621,California,Oath Keepers,San Diego County,2016,CA,Yes,Yes,CA_San Diego County*,San Diego County,CA_San Diego County,073,Oath Keepers_CA_San Diego County*,San Diego County*,,073,San Diego County*
+1376,District of Columbia,Constitution Party,Washington,2008,DC,No,No,DC_Washington,District Of Columbia County,DC_District Of Columbia County,,Constitution Party_DC_Washington,District of Columbia,001,001,District of Columbia
+1377,District of Columbia,John Birch Society,Washington,2008,DC,No,No,DC_Washington,District Of Columbia County,DC_District Of Columbia County,,John Birch Society_DC_Washington,District of Columbia,001,001,District of Columbia
+1378,District of Columbia,Constitution Party,Washington,2007,DC,No,No,DC_Washington,District Of Columbia County,DC_District Of Columbia County,,Constitution Party_DC_Washington,District of Columbia,001,001,District of Columbia
+1427,Florida,We Are Change,Port Saint Lucie,2015,FL,No,No,FL_Port Saint Lucie,Saint Lucie County,FL_Saint Lucie County,,We Are Change_FL_Port Saint Lucie,St. Lucie County,111,111,St. Lucie County
+1462,Florida,We Are Change,Port Saint Lucie,2014,FL,No,No,FL_Port Saint Lucie,Saint Lucie County,FL_Saint Lucie County,,We Are Change_FL_Port Saint Lucie,St. Lucie County,111,111,St. Lucie County
+1671,Georgia,"Moorish Science Temple of America 1928, The",Atlanta,2015,GA,No,No,GA_Atlanta,Dekalb County,GA_Dekalb County,,"Moorish Science Temple of America 1928, The_GA_Atlanta",DeKalb County,089,089,DeKalb County
+1677,Georgia,We the People,Atlanta,2015,GA,No,No,GA_Atlanta,Dekalb County,GA_Dekalb County,,We the People_GA_Atlanta,DeKalb County,089,089,DeKalb County
+1689,Georgia,Eagle Forum,Atlanta,2014,GA,No,No,GA_Atlanta,Dekalb County,GA_Dekalb County,,Eagle Forum_GA_Atlanta,DeKalb County,089,089,DeKalb County
+1691,Georgia,Get Out Of Our House (GOOOH),Atlanta,2014,GA,No,No,GA_Atlanta,Dekalb County,GA_Dekalb County,,Get Out Of Our House (GOOOH)_GA_Atlanta,DeKalb County,089,089,DeKalb County
+1693,Georgia,Oath Keepers,Atlanta,2014,GA,No,No,GA_Atlanta,Dekalb County,GA_Dekalb County,,Oath Keepers_GA_Atlanta,DeKalb County,089,089,DeKalb County
+1696,Georgia,The Moorish Science Temple of America 1928,Atlanta,2014,GA,No,No,GA_Atlanta,Dekalb County,GA_Dekalb County,,The Moorish Science Temple of America 1928_GA_Atlanta,DeKalb County,089,089,DeKalb County
+1699,Georgia,We Are Change,Atlanta,2014,GA,No,No,GA_Atlanta,Dekalb County,GA_Dekalb County,,We Are Change_GA_Atlanta,DeKalb County,089,089,DeKalb County
+1702,Georgia,We the People,Atlanta,2014,GA,No,No,GA_Atlanta,Dekalb County,GA_Dekalb County,,We the People_GA_Atlanta,DeKalb County,089,089,DeKalb County
+1727,Georgia,The Moorish Science Temple of America 1928,Atlanta,2013,GA,No,No,GA_Atlanta,Dekalb County,GA_Dekalb County,,The Moorish Science Temple of America 1928_GA_Atlanta,DeKalb County,089,089,DeKalb County
+1729,Georgia,We Are Change,Atlanta,2013,GA,No,No,GA_Atlanta,Dekalb County,GA_Dekalb County,,We Are Change_GA_Atlanta,DeKalb County,089,089,DeKalb County
+1755,Georgia,The Moorish Science Temple of America 1928,Atlanta,2012,GA,No,No,GA_Atlanta,Dekalb County,GA_Dekalb County,,The Moorish Science Temple of America 1928_GA_Atlanta,DeKalb County,089,089,DeKalb County
+1759,Georgia,We Are Change,Atlanta,2012,GA,No,No,GA_Atlanta,Dekalb County,GA_Dekalb County,,We Are Change_GA_Atlanta,DeKalb County,089,089,DeKalb County
+1762,Georgia,We the People,Atlanta,2012,GA,No,No,GA_Atlanta,Dekalb County,GA_Dekalb County,,We the People_GA_Atlanta,DeKalb County,089,089,DeKalb County
+1783,Georgia,Preamble Trust,Atlanta,2011,GA,No,No,GA_Atlanta,Dekalb County,GA_Dekalb County,,Preamble Trust_GA_Atlanta,DeKalb County,089,089,DeKalb County
+1786,Georgia,The Moorish Science Temple of America 1928,Atlanta,2011,GA,No,No,GA_Atlanta,Dekalb County,GA_Dekalb County,,The Moorish Science Temple of America 1928_GA_Atlanta,DeKalb County,089,089,DeKalb County
+1789,Georgia,We Are Change,Atlanta,2011,GA,No,No,GA_Atlanta,Dekalb County,GA_Dekalb County,,We Are Change_GA_Atlanta,DeKalb County,089,089,DeKalb County
+1819,Georgia,Preamble Trust,Atlanta,2010,GA,No,No,GA_Atlanta,Dekalb County,GA_Dekalb County,,Preamble Trust_GA_Atlanta,DeKalb County,089,089,DeKalb County
+1821,Georgia,The Moorish Science Temple of America 1928,Atlanta,2010,GA,No,No,GA_Atlanta,Dekalb County,GA_Dekalb County,,The Moorish Science Temple of America 1928_GA_Atlanta,DeKalb County,089,089,DeKalb County
+1822,Georgia,We Are Change,Atlanta,2010,GA,No,No,GA_Atlanta,Dekalb County,GA_Dekalb County,,We Are Change_GA_Atlanta,DeKalb County,089,089,DeKalb County
+1836,Georgia,We Are Change,Atlanta,2009,GA,No,No,GA_Atlanta,Dekalb County,GA_Dekalb County,,We Are Change_GA_Atlanta,DeKalb County,089,089,DeKalb County
+2046,Illinois,Illinois Sons of Liberty*,Willowbrook,2016,IL,Yes,Yes,IL_Willowbrook,Du Page County,IL_Du Page County,,Illinois Sons of Liberty*_IL_Willowbrook,DuPage County,043,043,DuPage County
+2048,Illinois,Oath Keepers,Woodstock,2016,IL,No,No,IL_Woodstock,Mchenry County,IL_Mchenry County,,Oath Keepers_IL_Woodstock,McHenry County,111,111,McHenry County
+2053,Illinois,Constitution Party of Illinois,Belleville,2015,IL,No,No,IL_Belleville,Saint Clair County,IL_Saint Clair County,,Constitution Party of Illinois_IL_Belleville,St. Clair County,163,163,St. Clair County
+2080,Illinois,Oath Keepers,Woodstock,2015,IL,No,No,IL_Woodstock,Mchenry County,IL_Mchenry County,,Oath Keepers_IL_Woodstock,McHenry County,111,111,McHenry County
+2094,Illinois,Illinois Sons of Liberty*,Bloomington,2014,IL,Yes,Yes,IL_Bloomington,Mclean County,IL_Mclean County,,Illinois Sons of Liberty*_IL_Bloomington,McLean County,113,113,McLean County
+2118,Illinois,Tenth Amendment Center,Aurora,2014,IL,No,No,IL_Aurora,Du Page County,IL_Du Page County,,Tenth Amendment Center_IL_Aurora,Will County,197,197,Will County
+2180,Illinois,Constitution Party,Belleville,2012,IL,No,No,IL_Belleville,Saint Clair County,IL_Saint Clair County,,Constitution Party_IL_Belleville,St. Clair County,163,163,St. Clair County
+2315,Indiana,Indiana Sons of Liberty*,Garrett,2015,IN,Yes,Yes,IN_Garrett,De Kalb County,IN_De Kalb County,,Indiana Sons of Liberty*_IN_Garrett,DeKalb County,033,033,DeKalb County
+2527,Indiana,Constitution Party,Mishawaka,2008,IN,No,No,IN_Mishawaka,St Joseph County,IN_St Joseph County,,Constitution Party_IN_Mishawaka,St. Joseph County,141,141,St. Joseph County
+2536,Indiana,Constitution Party,Mishawaka,2007,IN,No,No,IN_Mishawaka,St Joseph County,IN_St Joseph County,,Constitution Party_IN_Mishawaka,St. Joseph County,141,141,St. Joseph County
+2830,Louisiana,Constitution Party of Louisiana,Baton Rouge,2016,LA,No,No,LA_Baton Rouge,East Baton Rouge County,LA_East Baton Rouge County,,Constitution Party of Louisiana_LA_Baton Rouge,East Baton Rouge Parish,033,033,East Baton Rouge Parish
+2831,Louisiana,Eagle Forum,Shreveport,2016,LA,No,No,LA_Shreveport,Caddo County,LA_Caddo County,,Eagle Forum_LA_Shreveport,Caddo Parish,017,017,Caddo Parish
+2834,Louisiana,Oath Keepers,Covington,2016,LA,No,No,LA_Covington,Saint Tammany County,LA_Saint Tammany County,,Oath Keepers_LA_Covington,St. Tammany Parish,103,103,St. Tammany Parish
+2835,Louisiana,Oath Keepers,Baton Rouge,2016,LA,No,No,LA_Baton Rouge,East Baton Rouge County,LA_East Baton Rouge County,,Oath Keepers_LA_Baton Rouge,East Baton Rouge Parish,033,033,East Baton Rouge Parish
+2839,Louisiana,Constitution Party of Louisiana,Minden,2015,LA,No,No,LA_Minden,Webster County,LA_Webster County,,Constitution Party of Louisiana_LA_Minden,Webster Parish,119,119,Webster Parish
+2840,Louisiana,Eagle Forum,Shreveport,2015,LA,No,No,LA_Shreveport,Caddo County,LA_Caddo County,,Eagle Forum_LA_Shreveport,Caddo Parish,017,017,Caddo Parish
+2842,Louisiana,Oath Keepers,Baton Rouge,2015,LA,No,No,LA_Baton Rouge,East Baton Rouge County,LA_East Baton Rouge County,,Oath Keepers_LA_Baton Rouge,East Baton Rouge Parish,033,033,East Baton Rouge Parish
+2843,Louisiana,Oath Keepers,Covington,2015,LA,No,No,LA_Covington,Saint Tammany County,LA_Saint Tammany County,,Oath Keepers_LA_Covington,St. Tammany Parish,103,103,St. Tammany Parish
+2844,Louisiana,Oath Keepers,Lake Charles,2015,LA,No,No,LA_Lake Charles,Calcasieu County,LA_Calcasieu County,,Oath Keepers_LA_Lake Charles,Calcasieu Parish,019,019,Calcasieu Parish
+2845,Louisiana,Oath Keepers,Ville Platte,2015,LA,No,No,LA_Ville Platte,Evangeline County,LA_Evangeline County,,Oath Keepers_LA_Ville Platte,Evangeline Parish,039,039,Evangeline Parish
+2847,Louisiana,Three Percenters Club*,Alexandria,2015,LA,Yes,Yes,LA_Alexandria,Rapides County,LA_Rapides County,,Three Percenters Club*_LA_Alexandria,Rapides Parish,079,079,Rapides Parish
+2849,Louisiana,American Patriot Party,Alexandria,2014,LA,No,No,LA_Alexandria,Rapides County,LA_Rapides County,,American Patriot Party_LA_Alexandria,Rapides Parish,079,079,Rapides Parish
+2851,Louisiana,Get Out Of Our House (GOOOH),Baton Rouge,2014,LA,No,No,LA_Baton Rouge,East Baton Rouge County,LA_East Baton Rouge County,,Get Out Of Our House (GOOOH)_LA_Baton Rouge,East Baton Rouge Parish,033,033,East Baton Rouge Parish
+2852,Louisiana,Oath Keepers,New Orleans,2014,LA,No,No,LA_New Orleans,Orleans County,LA_Orleans County,,Oath Keepers_LA_New Orleans,Orleans Parish,071,071,Orleans Parish
+2854,Louisiana,We Are Change,New Orleans,2014,LA,No,No,LA_New Orleans,Orleans County,LA_Orleans County,,We Are Change_LA_New Orleans,Orleans Parish,071,071,Orleans Parish
+2856,Louisiana,Constitution Party,Eunice,2013,LA,No,No,LA_Eunice,Saint Landry County,LA_Saint Landry County,,Constitution Party_LA_Eunice,St. Landry Parish,097,097,St. Landry Parish
+2863,Louisiana,Washitaw Empire de Dugdahmoundyah,Monroe,2013,LA,No,No,LA_Monroe,Ouachita County,LA_Ouachita County,,Washitaw Empire de Dugdahmoundyah_LA_Monroe,Ouachita Parish,073,073,Ouachita Parish
+2865,Louisiana,Constitution Party,Eunice,2012,LA,No,No,LA_Eunice,Saint Landry County,LA_Saint Landry County,,Constitution Party_LA_Eunice,St. Landry Parish,097,097,St. Landry Parish
+2867,Louisiana,John Birch Society,New Orleans,2012,LA,No,No,LA_New Orleans,Orleans County,LA_Orleans County,,John Birch Society_LA_New Orleans,Orleans Parish,071,071,Orleans Parish
+2873,Louisiana,Truth Attack,Shreveport,2012,LA,No,No,LA_Shreveport,Caddo County,LA_Caddo County,,Truth Attack_LA_Shreveport,Caddo Parish,017,017,Caddo Parish
+2874,Louisiana,Washitaw Empire de Dugdahmoundyah,Monroe,2012,LA,No,No,LA_Monroe,Ouachita County,LA_Ouachita County,,Washitaw Empire de Dugdahmoundyah_LA_Monroe,Ouachita Parish,073,073,Ouachita Parish
+2876,Louisiana,We Are Change,New Orleans,2012,LA,No,No,LA_New Orleans,Orleans County,LA_Orleans County,,We Are Change_LA_New Orleans,Orleans Parish,071,071,Orleans Parish
+2877,Louisiana,We the People,Baton Rouge,2012,LA,No,No,LA_Baton Rouge,East Baton Rouge County,LA_East Baton Rouge County,,We the People_LA_Baton Rouge,East Baton Rouge Parish,033,033,East Baton Rouge Parish
+2880,Louisiana,Constitution Party,Mandeville,2011,LA,No,No,LA_Mandeville,Saint Tammany County,LA_Saint Tammany County,,Constitution Party_LA_Mandeville,St. Tammany Parish,103,103,St. Tammany Parish
+2882,Louisiana,John Birch Society,New Orleans,2011,LA,No,No,LA_New Orleans,Orleans County,LA_Orleans County,,John Birch Society_LA_New Orleans,Orleans Parish,071,071,Orleans Parish
+2888,Louisiana,The united States De Jure Government Duplessis Washitaw Empire de Dugdahmoundyah,Monroe,2011,LA,No,No,LA_Monroe,Ouachita County,LA_Ouachita County,,The united States De Jure Government Duplessis Washitaw Empire de Dugdahmoundyah_LA_Monroe,Ouachita Parish,073,073,Ouachita Parish
+2889,Louisiana,Truth Attack,Shreveport,2011,LA,No,No,LA_Shreveport,Caddo County,LA_Caddo County,,Truth Attack_LA_Shreveport,Caddo Parish,017,017,Caddo Parish
+2891,Louisiana,We Are Change,New Orleans,2011,LA,No,No,LA_New Orleans,Orleans County,LA_Orleans County,,We Are Change_LA_New Orleans,Orleans Parish,071,071,Orleans Parish
+2892,Louisiana,We the People,Baton Rouge,2011,LA,No,No,LA_Baton Rouge,East Baton Rouge County,LA_East Baton Rouge County,,We the People_LA_Baton Rouge,East Baton Rouge Parish,033,033,East Baton Rouge Parish
+2894,Louisiana,Constitution Party,Mandeville,2010,LA,No,No,LA_Mandeville,Saint Tammany County,LA_Saint Tammany County,,Constitution Party_LA_Mandeville,St. Tammany Parish,103,103,St. Tammany Parish
+2897,Louisiana,Truth Attack,Shreveport,2010,LA,No,No,LA_Shreveport,Caddo County,LA_Caddo County,,Truth Attack_LA_Shreveport,Caddo Parish,017,017,Caddo Parish
+2898,Louisiana,Washitaw Empire de Dugdahmoundyah,Monroe,2010,LA,No,No,LA_Monroe,Ouachita County,LA_Ouachita County,,Washitaw Empire de Dugdahmoundyah_LA_Monroe,Ouachita Parish,073,073,Ouachita Parish
+2899,Louisiana,We Are Change,Arcadia,2010,LA,No,No,LA_Arcadia,Bienville County,LA_Bienville County,,We Are Change_LA_Arcadia,Bienville Parish,013,013,Bienville Parish
+2900,Louisiana,We Are Change,New Orleans,2010,LA,No,No,LA_New Orleans,Orleans County,LA_Orleans County,,We Are Change_LA_New Orleans,Orleans Parish,071,071,Orleans Parish
+2901,Louisiana,We Are Change,Shreveport,2010,LA,No,No,LA_Shreveport,Caddo County,LA_Caddo County,,We Are Change_LA_Shreveport,Caddo Parish,017,017,Caddo Parish
+2902,Louisiana,We Are Change,Slidell,2010,LA,No,No,LA_Slidell,Saint Tammany County,LA_Saint Tammany County,,We Are Change_LA_Slidell,St. Tammany Parish,103,103,St. Tammany Parish
+2904,Louisiana,Constitution Party,Mandeville,2009,LA,No,No,LA_Mandeville,Saint Tammany County,LA_Saint Tammany County,,Constitution Party_LA_Mandeville,St. Tammany Parish,103,103,St. Tammany Parish
+2908,Louisiana,Truth Attack,Shreveport,2009,LA,No,No,LA_Shreveport,Caddo County,LA_Caddo County,,Truth Attack_LA_Shreveport,Caddo Parish,017,017,Caddo Parish
+2909,Louisiana,We Are Change,Arcadia,2009,LA,No,No,LA_Arcadia,Bienville County,LA_Bienville County,,We Are Change_LA_Arcadia,Bienville Parish,013,013,Bienville Parish
+2910,Louisiana,We Are Change,New Orleans,2009,LA,No,No,LA_New Orleans,Orleans County,LA_Orleans County,,We Are Change_LA_New Orleans,Orleans Parish,071,071,Orleans Parish
+2911,Louisiana,We Are Change,Shreveport,2009,LA,No,No,LA_Shreveport,Caddo County,LA_Caddo County,,We Are Change_LA_Shreveport,Caddo Parish,017,017,Caddo Parish
+2912,Louisiana,We Are Change,Slidell,2009,LA,No,No,LA_Slidell,Saint Tammany County,LA_Saint Tammany County,,We Are Change_LA_Slidell,St. Tammany Parish,103,103,St. Tammany Parish
+2915,Louisiana,John Birch Society,New Orleans,2008,LA,No,No,LA_New Orleans,Orleans County,LA_Orleans County,,John Birch Society_LA_New Orleans,Orleans Parish,071,071,Orleans Parish
+2917,Louisiana,John Birch Society,New Orleans,2007,LA,No,No,LA_New Orleans,Orleans County,LA_Orleans County,,John Birch Society_LA_New Orleans,Orleans Parish,071,071,Orleans Parish
+2918,Louisiana,Louisiana Unorganized Militia,Lafayette,2007,LA,No,Yes,LA_Lafayette,Lafayette County,LA_Lafayette County,,Louisiana Unorganized Militia_LA_Lafayette,Lafayette Parish,055,055,Lafayette Parish
+3049,Maryland,Three Percenters Club*,Baltimore,2015,MD,Yes,Yes,MD_Baltimore,Baltimore City County,MD_Baltimore City County,,Three Percenters Club*_MD_Baltimore,Baltimore (City),510,510,Baltimore (City)
+3064,Maryland,We Are Change,Baltimore,2014,MD,No,No,MD_Baltimore,Baltimore City County,MD_Baltimore City County,,We Are Change_MD_Baltimore,Baltimore (City),510,510,Baltimore (City)
+3094,Maryland,We Are Change,Baltimore,2012,MD,No,No,MD_Baltimore,Baltimore City County,MD_Baltimore City County,,We Are Change_MD_Baltimore,Baltimore (City),510,510,Baltimore (City)
+3106,Maryland,We Are Change,Baltimore,2011,MD,No,No,MD_Baltimore,Baltimore City County,MD_Baltimore City County,,We Are Change_MD_Baltimore,Baltimore (City),510,510,Baltimore (City)
+3626,Minnesota,We the People,Duluth,2015,MN,No,No,MN_Duluth,Saint Louis County,MN_Saint Louis County,,We the People_MN_Duluth,St. Louis County,137,137,St. Louis County
+3633,Minnesota,We Are Change,Duluth,2014,MN,No,No,MN_Duluth,Saint Louis County,MN_Saint Louis County,,We Are Change_MN_Duluth,St. Louis County,137,137,St. Louis County
+3635,Minnesota,We the People,Duluth,2014,MN,No,No,MN_Duluth,Saint Louis County,MN_Saint Louis County,,We the People_MN_Duluth,St. Louis County,137,137,St. Louis County
+3647,Minnesota,We the People,Duluth,2013,MN,No,No,MN_Duluth,Saint Louis County,MN_Saint Louis County,,We the People_MN_Duluth,St. Louis County,137,137,St. Louis County
+3657,Minnesota,We Are Change,Duluth,2012,MN,No,No,MN_Duluth,Saint Louis County,MN_Saint Louis County,,We Are Change_MN_Duluth,St. Louis County,137,137,St. Louis County
+3660,Minnesota,We the People,Duluth,2012,MN,No,No,MN_Duluth,Saint Louis County,MN_Saint Louis County,,We the People_MN_Duluth,St. Louis County,137,137,St. Louis County
+3669,Minnesota,We Are Change,Duluth,2011,MN,No,No,MN_Duluth,Saint Louis County,MN_Saint Louis County,,We Are Change_MN_Duluth,St. Louis County,137,137,St. Louis County
+3676,Minnesota,We Are Change,Duluth,2010,MN,No,No,MN_Duluth,Saint Louis County,MN_Saint Louis County,,We Are Change_MN_Duluth,St. Louis County,137,137,St. Louis County
+3684,Minnesota,We Are Change,Duluth,2009,MN,No,No,MN_Duluth,Saint Louis County,MN_Saint Louis County,,We Are Change_MN_Duluth,St. Louis County,137,137,St. Louis County
+3719,Mississippi,Mississippi Militia*,Southaven,2015,MS,Yes,Yes,MS_Southaven,De Soto County,MS_De Soto County,,Mississippi Militia*_MS_Southaven,DeSoto County,033,033,DeSoto County
+3739,Mississippi,Mississippi Militia*,Southaven,2014,MS,Yes,Yes,MS_Southaven,De Soto County,MS_De Soto County,,Mississippi Militia*_MS_Southaven,DeSoto County,033,033,DeSoto County
+3759,Mississippi,Mississippi Militia*,Southaven,2013,MS,Yes,Yes,MS_Southaven,De Soto County,MS_De Soto County,,Mississippi Militia*_MS_Southaven,DeSoto County,033,033,DeSoto County
+3781,Mississippi,Mississippi Militia* ,Southaven,2012,MS,Yes,Yes,MS_Southaven,De Soto County,MS_De Soto County,,Mississippi Militia* _MS_Southaven,DeSoto County,033,033,DeSoto County
+3804,Mississippi,Mississippi Militia*,Southaven,2011,MS,Yes,Yes,MS_Southaven,De Soto County,MS_De Soto County,,Mississippi Militia*_MS_Southaven,DeSoto County,033,033,DeSoto County
+3825,Mississippi,Mississippi Militia*,Southaven,2010,MS,Yes,Yes,MS_Southaven,De Soto County,MS_De Soto County,,Mississippi Militia*_MS_Southaven,DeSoto County,033,033,DeSoto County
+4016,Missouri,Constitution Party,Fenton,2008,MO,No,No,MO_Fenton,Saint Louis County,MO_Saint Louis County,,Constitution Party_MO_Fenton,St. Louis County,189,189,St. Louis County
+4020,Missouri,Constitution Party,Fenton,2007,MO,No,No,MO_Fenton,Saint Louis County,MO_Saint Louis County,,Constitution Party_MO_Fenton,St. Louis County,189,189,St. Louis County
+4037,Montana,Oath Keepers,Helena,2015,MT,No,No,MT_Helena,Lewis And Clark County,MT_Lewis And Clark County,,Oath Keepers_MT_Helena,Lewis and Clark County,049,049,Lewis and Clark County
+4052,Montana,Constitution Party,Helena,2013,MT,No,No,MT_Helena,Lewis And Clark County,MT_Lewis And Clark County,,Constitution Party_MT_Helena,Lewis and Clark County,049,049,Lewis and Clark County
+4068,Montana,Constitution Party,Helena,2012,MT,No,No,MT_Helena,Lewis And Clark County,MT_Lewis And Clark County,,Constitution Party_MT_Helena,Lewis and Clark County,049,049,Lewis and Clark County
+4091,Montana,Constitution Party,Helena,2011,MT,No,No,MT_Helena,Lewis And Clark County,MT_Lewis And Clark County,,Constitution Party_MT_Helena,Lewis and Clark County,049,049,Lewis and Clark County
+4215,Nevada,Constitution Party (Independent American Party),Carson City,2015,NV,No,No,NV_Carson City,Carson City County,NV_Carson City County,,Constitution Party (Independent American Party)_NV_Carson City,Carson City,510,510,Carson City
+4261,Nevada,Constitution Party,Carson City,2012,NV,No,No,NV_Carson City,Carson City County,NV_Carson City County,,Constitution Party_NV_Carson City,Carson City,510,510,Carson City
+4285,Nevada,Constitution Party,Carson City,2011,NV,No,No,NV_Carson City,Carson City County,NV_Carson City County,,Constitution Party_NV_Carson City,Carson City,510,510,Carson City
+5607,Oregon,Oath Keepers,Josephine County,2016,OR,Yes,Yes,OR_Josephine County*,Josephine County,OR_Josephine County,033,Oath Keepers_OR_Josephine County*,Josephine County*,,033,Josephine County*
+6507,Texas,"Texas Militia, The*",Waco,2015,TX,Yes,Yes,TX_Waco,Mclennan County,TX_Mclennan County,,"Texas Militia, The*_TX_Waco",McLennan County,309,309,McLennan County
+6516,Texas,We Are Change,Waco,2015,TX,No,No,TX_Waco,Mclennan County,TX_Mclennan County,,We Are Change_TX_Waco,McLennan County,309,309,McLennan County
+6550,Texas,The Order of Constitution Defenders.com,Waco,2014,TX,No,No,TX_Waco,Mclennan County,TX_Mclennan County,,The Order of Constitution Defenders.com_TX_Waco,McLennan County,309,309,McLennan County
+6560,Texas,The Texas Militia*,Waco,2014,TX,Yes,Yes,TX_Waco,Mclennan County,TX_Mclennan County,,The Texas Militia*_TX_Waco,McLennan County,309,309,McLennan County
+6571,Texas,We Are Change,Waco,2014,TX,No,No,TX_Waco,Mclennan County,TX_Mclennan County,,We Are Change_TX_Waco,McLennan County,309,309,McLennan County
+6636,Texas,The Texas Militia*,Waco,2013,TX,Yes,Yes,TX_Waco,Mclennan County,TX_Mclennan County,,The Texas Militia*_TX_Waco,McLennan County,309,309,McLennan County
+6687,Texas,The Order of Constitution Defenders.com ,Waco,2012,TX,No,No,TX_Waco,Mclennan County,TX_Mclennan County,,The Order of Constitution Defenders.com _TX_Waco,McLennan County,309,309,McLennan County
+6709,Texas,The Texas Militia*,Waco,2012,TX,Yes,Yes,TX_Waco,Mclennan County,TX_Mclennan County,,The Texas Militia*_TX_Waco,McLennan County,309,309,McLennan County
+6764,Texas,Patrioticspace,Waco,2011,TX,No,No,TX_Waco,Mclennan County,TX_Mclennan County,,Patrioticspace_TX_Waco,McLennan County,309,309,McLennan County
+6789,Texas,The Texas Militia*,Waco,2011,TX,Yes,Yes,TX_Waco,Mclennan County,TX_Mclennan County,,The Texas Militia*_TX_Waco,McLennan County,309,309,McLennan County
+6819,Texas,PatrioticSpace,Waco,2010,TX,No,No,TX_Waco,Mclennan County,TX_Mclennan County,,PatrioticSpace_TX_Waco,McLennan County,309,309,McLennan County
+6873,Texas,The Texas Militia*,Waco,2010,TX,Yes,Yes,TX_Waco,Mclennan County,TX_Mclennan County,,The Texas Militia*_TX_Waco,McLennan County,309,309,McLennan County
+7138,Virginia,Constitution Party of Virginia,Newport News,2016,VA,No,No,VA_Newport News,Newport News City County,VA_Newport News City County,,Constitution Party of Virginia_VA_Newport News,Newport News (City),700,700,Newport News (City)
+7139,Virginia,Constitutional Rights PAC,Alexandria,2016,VA,No,No,VA_Alexandria,Alexandria City County,VA_Alexandria City County,,Constitutional Rights PAC_VA_Alexandria,Alexandria,510,510,Alexandria
+7145,Virginia,John Birch Society,Petersburg,2016,VA,No,No,VA_Petersburg,Petersburg City County,VA_Petersburg City County,,John Birch Society_VA_Petersburg,Petersburg (City),730,730,Petersburg (City)
+7155,Virginia,Oath Keepers,Hampton,2016,VA,No,No,VA_Hampton,Hampton City County,VA_Hampton City County,,Oath Keepers_VA_Hampton,Hampton (City),650,650,Hampton (City)
+7190,Virginia,Oath Keepers,Hampton,2015,VA,No,No,VA_Hampton,Hampton City County,VA_Hampton City County,,Oath Keepers_VA_Hampton,Hampton (City),650,650,Hampton (City)
+7196,Virginia,Oath Keepers,Norfolk,2015,VA,No,No,VA_Norfolk,Norfolk City County,VA_Norfolk City County,,Oath Keepers_VA_Norfolk,Norfolk (City),710,710,Norfolk (City)
+7212,Virginia,Basics Project,Virginia Beach,2014,VA,No,No,VA_Virginia Beach,Virginia Beach City County,VA_Virginia Beach City County,,Basics Project_VA_Virginia Beach,Virginia Beach (City),810,810,Virginia Beach (City)
+7216,Virginia,Get Out Of Our House (GOOOH),Richmond,2014,VA,No,No,VA_Richmond,Richmond City County,VA_Richmond City County,,Get Out Of Our House (GOOOH)_VA_Richmond,Richmond (City),760,760,Richmond (City)
+7220,Virginia,Oath Keepers,Fairfax,2014,VA,No,No,VA_Fairfax,Fairfax City County,VA_Fairfax City County,,Oath Keepers_VA_Fairfax,Fairfax (City),600,600,Fairfax (City)
+7221,Virginia,Oath Keepers,Hampton,2014,VA,No,No,VA_Hampton,Hampton City County,VA_Hampton City County,,Oath Keepers_VA_Hampton,Hampton (City),650,650,Hampton (City)
+7222,Virginia,Oath Keepers,Richmond,2014,VA,No,No,VA_Richmond,Richmond City County,VA_Richmond City County,,Oath Keepers_VA_Richmond,Richmond (City),760,760,Richmond (City)
+7226,Virginia,Tenth Amendment Center,Richmond,2014,VA,No,No,VA_Richmond,Richmond City County,VA_Richmond City County,,Tenth Amendment Center_VA_Richmond,Richmond (City),760,760,Richmond (City)
+7229,Virginia,We Are Change,Virginia Beach,2014,VA,No,No,VA_Virginia Beach,Virginia Beach City County,VA_Virginia Beach City County,,We Are Change_VA_Virginia Beach,Virginia Beach (City),810,810,Virginia Beach (City)
+7233,Virginia,Basics Project,Virginia Beach,2013,VA,No,No,VA_Virginia Beach,Virginia Beach City County,VA_Virginia Beach City County,,Basics Project_VA_Virginia Beach,Virginia Beach (City),810,810,Virginia Beach (City)
+7253,Virginia,Basics Project ,Virginia Beach,2012,VA,No,No,VA_Virginia Beach,Virginia Beach City County,VA_Virginia Beach City County,,Basics Project _VA_Virginia Beach,Virginia Beach (City),810,810,Virginia Beach (City)
+7265,Virginia,The Autonomous Authchthon International Muurish Gansul,Norfolk,2012,VA,No,No,VA_Norfolk,Norfolk City County,VA_Norfolk City County,,The Autonomous Authchthon International Muurish Gansul_VA_Norfolk,Norfolk (City),710,710,Norfolk (City)
+7269,Virginia,We Are Change,Virginia Beach,2012,VA,No,No,VA_Virginia Beach,Virginia Beach City County,VA_Virginia Beach City County,,We Are Change_VA_Virginia Beach,Virginia Beach (City),810,810,Virginia Beach (City)
+7283,Virginia,The Autonomous Authchthon International Muurish Gansul,Norfolk,2011,VA,No,No,VA_Norfolk,Norfolk City County,VA_Norfolk City County,,The Autonomous Authchthon International Muurish Gansul_VA_Norfolk,Norfolk (City),710,710,Norfolk (City)
+7288,Virginia,We Are Change,Virginia Beach,2011,VA,No,No,VA_Virginia Beach,Virginia Beach City County,VA_Virginia Beach City County,,We Are Change_VA_Virginia Beach,Virginia Beach (City),810,810,Virginia Beach (City)
+7291,Virginia,Confederate States Home Guard*,Salem,2010,VA,Yes,Yes,VA_Salem,Salem County,VA_Salem County,,Confederate States Home Guard*_VA_Salem,Salem (City),775,775,Salem (City)
+7295,Virginia,The Autonomous Authchthon International Muurish Gansul,Norfolk,2010,VA,No,No,VA_Norfolk,Norfolk City County,VA_Norfolk City County,,The Autonomous Authchthon International Muurish Gansul_VA_Norfolk,Norfolk (City),710,710,Norfolk (City)
+7748,Wisconsin,Constitution Party,Ripon,2010,WI,No,No,WI_Ripon,Fond Du Lac County,WI_Fond Du Lac County,,Constitution Party_WI_Ripon,Fond du Lac County,039,039,Fond du Lac County
+7763,Wisconsin,Constitution Party,Ripon,2009,WI,No,No,WI_Ripon,Fond Du Lac County,WI_Fond Du Lac County,,Constitution Party_WI_Ripon,Fond du Lac County,039,039,Fond du Lac County
